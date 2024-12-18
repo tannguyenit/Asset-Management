@@ -221,7 +221,7 @@ if ($arsUser["picture"]=="") {
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu pull-right">
                   <li><a href="/trang-ca-nhan/<?php echo $arsUser["id_user"]?>">Profile</a></li>
-                  <li><a href="/admin/Admin_loguot"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  <li><a href="/admin/Admin_logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
                 </ul>
               </li>
 

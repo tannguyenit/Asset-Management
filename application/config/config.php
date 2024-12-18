@@ -1,6 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -377,7 +379,7 @@ $config['sess_match_ip']        = FALSE;
 $config['sess_match_useragent'] = TRUE;
 $config['sess_time_to_update']  = 300;
 $config['sess_expire_on_close'] = TRUE;
-$config['sess_save_path'] = NULL;//database table name
+$config['sess_save_path'] = sys_get_temp_dir();//database table name
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;

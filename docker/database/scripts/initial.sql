@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `dhqn`
+-- Database: `main`
 --
 
 -- --------------------------------------------------------
@@ -629,15 +629,15 @@ INSERT INTO `users` (`id_user`, `username`, `password`, `fullname`, `picture`, `
 (4, 'ht', '21232f297a57a5a743894a0e4a801fc3', 'Đông Phương Bất Bại', '510fd2f20476f00970c955b841600136.jpg', '', 123445015, 'dongphuongbatbai@gmail.com', 'Giới thiệu sơ nét về bản thân', b'1', 1, 0, 0),
 (5, 'canbo', '21232f297a57a5a743894a0e4a801fc3', 'Triệu Mẫn', '03.jpg', 'Tam Thành Phú Ninh Quảng Nam', 1263751380, 'trieuman@hotmail.com', 'Giới thiệu sơ nét về bản thân', b'1', 4, 0, 0),
 (6, 'canbonhanvien', '21232f297a57a5a743894a0e4a801fc3', 'Trương Vô Kỵ', '03.jpg', 'Tam Thành Phú Ninh Quảng Nam', 1263751380, 'truongvoky@hotmail.com', 'Giới thiệu sơ nét về bản thân', b'1', 4, 0, 0),
-(7, 'canbonhanvien1', '57ba172a6be125cca2f449826f9980ca', 'Nguyễn Văn Tân', 'c8f8919e944f21b36593443de98b8ac3.jpg', '', 0, '', '', b'0', 0, 0, 0),
+(7, 'canbonhanvien1', '57ba172a6be125cca2f449826f9980ca', 'Duơng Quá', 'c8f8919e944f21b36593443de98b8ac3.jpg', '', 0, '', '', b'0', 0, 0, 0),
 (8, 'text', '033e209b7043d8efa0be0841c59ab490', '', '', '', 0, 'canbo@gmail.com', '', b'1', 4, 0, 0),
 (9, 'canbonhan', '57ba172a6be125cca2f449826f9980ca', 'Mai Nguyễn', '', '', 0, 'mai@gmail.com', '', b'1', 4, 0, 0),
 (10, 'maiahahh', 'c89519ed5a5e351d36d2519e244cfbd7', '', '', '', 0, '', '', b'0', 0, 0, 0),
 (11, '123123123', 'f5bb0c8de146c67b44babbf4e6584cc0', '', '', '', 0, '', '', b'0', 0, 0, 0),
 (12, 'aaaaaaaaaaaaaaaa', '3dbe00a167653a1aaee01d93e77e730e', '\\"<body style=\\\\\\"display:none\\\\\\">\\"', '', '', 0, '', '', b'0', 4, 0, 0),
 (13, 'qeqqeqeqeqe', '19097abae58b295894a6f8d36680fff4', 'eqeqeqeqeqe', '', 'qeqeqe', 2147483647, '', '', b'0', 3, 2, 0),
-(14, 'tannguyen', '5fbd188f664648e3f6b1c98b0e4a3cb1', 'Nguyễn Văn Tân', '', '', 0, 'tannguyen1995@hotmail.com', '', b'0', 4, 0, 0),
-(15, 'doquangkhoi', '25f9e794323b453885f5181f1b624d0b', 'Đỗ quang khôi', '', '', 0, 't@gmail.com', '', b'0', 4, 0, 0),
+(14, 'dongta', '5fbd188f664648e3f6b1c98b0e4a3cb1', 'Đông Tà', '', '', 0, 'tannguyen1995@hotmail.com', '', b'0', 4, 0, 0),
+(15, 'taydoc', '25f9e794323b453885f5181f1b624d0b', 'Tây Độc', '', '', 0, 't@gmail.com', '', b'0', 4, 0, 0),
 (16, 'userdemo', 'e6e061838856bf47e1de730719fb2609', 'Nguyễn Thị Demo', '30f5184a9e2fef943990e9fbce2d14e3.png', 'Địa chỉ chưa nhập', 1111111111, '', '', b'1', 2, 2, 0);
 
 -- --------------------------------------------------------

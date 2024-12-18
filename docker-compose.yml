@@ -1,0 +1,53 @@
+version: '3'
+services:
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./:/var/www/html/app
+      - ./docker/nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      main_net:
+    ports:
+      - "8080:80"
+    restart: always
+
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/var/www/html/app
+    depends_on:
+      - database
+    networks:
+      main_net:
+
+  database:
+    image: mysql:5.7
+    platform: linux/x86_64
+    networks:
+      main_net:
+    ports:
+      - 3306:3306
+    volumes:
+    - ./docker/database/scripts:/docker-entrypoint-initdb.d
+    - ./docker/database/mysql_data:/var/lib/mysql
+    env_file:
+      - .env
+
+  phpmyadmin:
+    depends_on:
+      - database
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    platform: linux/x86_64
+    ports:
+      - '8081:80'
+    env_file:
+      - .env
+    networks:
+      main_net:
+
+networks:
+  main_net:
